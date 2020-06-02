@@ -1,1 +1,11 @@
+body {
+  font-family: "Thasadith", sans-serif;
+}
 
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}

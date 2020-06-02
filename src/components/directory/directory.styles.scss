@@ -1,0 +1,27 @@
+.directory-menu {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /*background-color:  #802323ed;*/
+  background-color: #a8a4bbed;
+  padding: 25px 80px 10px;
+  margin-top: 15rem;
+}
+
+
+/* --------------------------
+      Media queries
+----------------------------- */
+
+@media (min-width: 300px) {
+  .directory-menu {
+    margin-top: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .directory-menu {
+    margin-top: 8rem;
+  }
+}
