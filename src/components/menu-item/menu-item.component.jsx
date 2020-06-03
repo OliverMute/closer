@@ -1,9 +1,10 @@
 import React from "react";
+import { withRouter } from "react-router-dom";
 import "./menu-item.styles.scss";
 
-const MenuItem = ({ title, imageUrl, size }) => {
+const MenuItem = ({ title, imageUrl, size, history, match, linkUrl }) => {
   return (
-    <div className={`${size} menu-item`}>
+    <div className={`${size} menu-item`} onClick={() => history.push(`${match.url}${linkUrl}`)}>
       <div
         className={"background-image"}
         style={{
@@ -18,4 +19,10 @@ const MenuItem = ({ title, imageUrl, size }) => {
   );
 };
 
-export default MenuItem;
+export default withRouter(MenuItem);
+
+/* withRouter is an higher order component. It's a function that
+takes a component as an argument and returns a modified component.
+We powering up our MenuItem component to have access to the properties
+related to our router. It returns back a super power MenuItem component
+*/

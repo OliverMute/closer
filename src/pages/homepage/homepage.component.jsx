@@ -6,26 +6,23 @@ const Homepage = () => {
   return (
     <Fragment>
       <div id={"navbar"}>
-          <video src="video/drone 4-3.mp4" id={"drone"} autoPlay muted loop/>
-          <video src="video/closer.mp4" id={"closer"} autoPlay muted loop></video>
+        <video src="video/drone 4-3.mp4" id={"drone"} autoPlay muted loop />
+        <video src="video/closer.mp4" id={"closer"} autoPlay muted loop></video>
         <ul id={"homepage-navbar"}>
           <li>
-            <a href="">Home</a>
+            <a href="/">About</a>
           </li>
           <li>
-            <a href="">Hats</a>
+            <a href="/">Shop</a>
           </li>
           <li>
-            <a href="">Jackets</a>
+            <a href="/">Womens</a>
           </li>
           <li>
-            <a href="">Sneakers</a>
+            <a href="/">Mens</a>
           </li>
           <li>
-            <a href="">Womens</a>
-          </li>
-          <li>
-            <a href="">Mens</a>
+            <a href="/">Checkout</a>
           </li>
         </ul>
       </div>
@@ -33,7 +30,6 @@ const Homepage = () => {
         <img src="../../../images/banner.jpg" alt="" />
       </header>
       <div className="homepage">
-
         <Directory />
       </div>
     </Fragment>
