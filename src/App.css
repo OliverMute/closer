@@ -1,6 +1,7 @@
 body {
   /*font-family: "Thasadith", sans-serif;*/
-  font-family: 'Trykker', serif;
+  font-family: "Trykker", serif;
+  padding: 20px 60px;
 }
 
 li {
