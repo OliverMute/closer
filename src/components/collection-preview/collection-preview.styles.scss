@@ -5,10 +5,21 @@
   z-index: -1;
 }
 
+
+
+.cap-shop {
+  width: 600px;
+  margin-top: 62px;
+  margin-bottom: 6px;
+  margin-left: 22%;
+  z-index: -1;
+}
+
 .collection-preview {
   display: flex;
   flex-direction: column;
   margin-bottom: 30px;
+  padding: 20px 60px;
 }
 
 .title {
@@ -16,9 +27,12 @@
   margin-top: -5rem;
   position: absolute;
   z-index: 2;
+  color: #dc97ff;
+  text-shadow: 3px 2px 4px #141f2d;
 }
 
 .preview {
   display: flex;
   justify-content: space-between;
+  margin-top: 10px;
 }

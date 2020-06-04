@@ -4,6 +4,7 @@
   background-color: #fafff1;
   padding: 20px 0 5px;
   position: fixed;
+  top: 7rem;
 
   a {
     text-transform: uppercase;
@@ -22,29 +23,21 @@
     width: 436px;
     padding: 20px 10px;
   }
-
-  #drone {
-    float: right;
-    width: 158px;
-    margin-top: -2rem;
-  }
-
-  #closer {
-    width: 920px;
-    position: absolute;
-    left: 20%;
-    z-index: -1;
-    top: -20px;
-  }
 }
+
+
+
+
+
+
 
 header {
   height: 300px;
+}
 
-  img {
-    position: fixed;
-    z-index: -1;
-  }
+img {
+  z-index: -1;
+  top: 4rem;
 }
 
 .homepage {
@@ -54,21 +47,81 @@ header {
   padding: 20px 80px;
 }
 
+#banner {
+  position: fixed;
+  filter:grayscale(0.6);
+
+}
+
+
 /* --------------------------
       Media queries
 ----------------------------- */
 
-/*@media (min-width: 300px) {
-  video {
-    width: 260px;
-    margin-bottom: 20px;
+@media (min-width: 300px) {
+  #homepage-video {
+
+    position: fixed;
+    width: 20%;
+    background-color: #fbfdf2;
+    margin-top: -210px;
+    z-index: 3;
+    right: 0;
+  }
+
+  #drone {
+    float: right;
+    width: 85px;
+    margin-top: 12rem;
+  }
+  #closer{
+display:none;
+    /*width: 394px;
+    margin-top: 5px;*/
   }
 }
 
-@media (min-width: 1200px) {
-  video {
-    width: 25%;
-    margin-bottom: -75px;
-    margin-top: -96px;
+@media (min-width: 569px) {
+  #homepage-video {
+
+    position: fixed;
+    width: 100%;
+    background-color: #fbfdf2;
+    margin-top: -107px;
+    z-index:1;
   }
-}*/
+
+  #drone {
+    float: right;
+    width: 100px;
+    margin-top: 10rem;
+  }
+  #closer{
+    display:block;
+    width: 394px;
+    margin-top: 180px;
+  }
+}
+
+@media (min-width: 1095px) {
+  #homepage-video {
+    top: -21px;
+    position: fixed;
+    width: 100%;
+    background-color: #fbfdf2;
+
+  }
+
+  #drone {
+    float: right;
+    width: 158px;
+    margin-top: 10rem;
+  }
+
+  #closer {
+    width: 920px;
+    left: 20%;
+    z-index: -1;
+    margin-top: 171px;
+  }
+}

@@ -1,7 +1,7 @@
 body {
   /*font-family: "Thasadith", sans-serif;*/
   font-family: "Trykker", serif;
-  padding: 20px 60px;
+
 }
 
 li {
@@ -11,3 +11,17 @@ li {
 a {
   text-decoration: none;
 }
+
+
+/*
+@media (min-width: 200px) {
+  body {
+   padding:0;
+  }
+}
+
+@media (min-width: 686px) {
+  body {
+    padding: 20px 60px;
+  }
+}*/

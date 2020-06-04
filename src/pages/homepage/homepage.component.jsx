@@ -5,9 +5,11 @@ import Directory from "../../components/directory/directory.component";
 const Homepage = () => {
   return (
     <Fragment>
-      <div id={"navbar"}>
+      <div id ="homepage-video">
         <video src="video/drone 4-3.mp4" id={"drone"} autoPlay muted loop />
-        <video src="video/closer.mp4" id={"closer"} autoPlay muted loop></video>
+        <video src="video/closer.mp4" id={"closer"} autoPlay muted loop/>
+      </div>
+        {/*<div id={"navbar"}>
         <ul id={"homepage-navbar"}>
           <li>
             <a href="/">About</a>
@@ -26,10 +28,10 @@ const Homepage = () => {
           </li>
         </ul>
       </div>
-      <header>
-        <img src="../../../images/banner.jpg" alt="" />
-      </header>
+*/}
       <div className="homepage">
+        <img id="banner" src="../../images/banner.jpg" alt="" />
+
         <Directory />
       </div>
     </Fragment>
