@@ -1,7 +1,6 @@
 body {
   /*font-family: "Thasadith", sans-serif;*/
   font-family: "Trykker", serif;
-
 }
 
 li {
@@ -12,6 +11,9 @@ a {
   text-decoration: none;
 }
 
+* {
+  box-sizing: border-box;
+}
 
 /*
 @media (min-width: 200px) {
