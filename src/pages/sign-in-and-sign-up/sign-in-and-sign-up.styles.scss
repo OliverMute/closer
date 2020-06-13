@@ -5,3 +5,26 @@
   width: 850px;
   margin: 0 auto;
 }
+
+/* --------------------------
+      Media queries
+----------------------------- */
+
+@media (min-width: 300px) {
+  #adidas {
+    position: absolute;
+    top: 4rem;
+    z-index: -1;
+    right: -15%;
+    width: 1400px;
+  }
+}
+
+@media (min-width: 569px) {
+  #adidas {
+    right: -2%;
+  }
+}
+
+@media (min-width: 1095px) {
+}

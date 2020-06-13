@@ -5,9 +5,12 @@ import SignUp from "../../components/sign-up/sign-up.component";
 
 const SignInAndSignUpPage = () => {
   return (
-    <div className={"sign-in-and-sign-up"}>
-      <SignIn />
-      <SignUp />
+    <div>
+      <video id={"adidas"} src="../video/adidas.mp4" autoPlay muted loop />
+      <div className={"sign-in-and-sign-up"}>
+        <SignIn />
+        <SignUp />
+      </div>
     </div>
   );
 };

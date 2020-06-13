@@ -54,7 +54,7 @@ class App extends Component {
                * combine both to have properties and id */
             },
           });
-          console.log(this.state);
+          /*   console.log(this.state);*/
           /*
            () => {
             console.log(this.state)
