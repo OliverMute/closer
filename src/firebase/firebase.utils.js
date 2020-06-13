@@ -13,6 +13,57 @@ const config = {
   measurementId: "G-1TXFC0N7ZF",
 };
 
+// store user into database
+
+export const createUserProfileDocument = async (userAuth, additionalData) => {
+  /* allows us to take that user off object that we got back
+   * from authentication library and then store inside of our
+   * database. The function is asynchronous.
+   */
+
+  if (!userAuth) return;
+  /*if(!userAuth) return; -> if userAuth object doesn't exist, exit
+  from this function
+  */
+
+  // query inside of firestore to see if it already exist
+
+  const userRef = firestore.doc(`users/${userAuth.uid}`);
+
+  // how do we get the snapshot
+
+  const snapshot = await userRef.get();
+  /* the snapshot only represents the data*/
+
+  // if no snapshot, create a piece of data
+
+  if (!snapshot.exists) {
+    /* when we do a CRUD, we use the DocumentReference object, not the
+     * snapshot. Snapshot represents the data */
+
+    // which data we want to use to create this actual document
+
+    const { displayName, email } = userAuth;
+    const createdAt = new Date();
+    /* when we made that document */
+
+    try {
+      await userRef.set({
+        displayName,
+        email,
+        createdAt,
+        ...additionalData,
+      });
+      /* creating the user data into database */
+    } catch (error) {
+      console.log("error created user", error.message);
+    }
+  }
+
+  return userRef;
+  /* we will use this userRef to do other things */
+};
+
 firebase.initializeApp(config);
 
 export const auth = firebase.auth();
