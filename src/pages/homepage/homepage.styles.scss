@@ -60,8 +60,8 @@ img {
     right: 0;
   }
 
-  #drone {
-    float: right;
+  #veste {
+    position: absolute;
     width: 85px;
     margin-top: 12rem;
   }
@@ -81,10 +81,10 @@ img {
     z-index: 1;
   }
 
-  #drone {
-    float: right;
-    width: 100px;
-    margin-top: 10rem;
+  #veste {
+    width: 248px;
+    right: -7%;
+    top: -16px;
   }
   #closer {
     display: block;
@@ -101,10 +101,11 @@ img {
     background-color: #fbfdf287;
   }
 
-  #drone {
-    float: right;
-    width: 158px;
-    margin-top: 184px;
+  #veste {
+
+    width: 490px;
+    top: 0px;
+    right: -4%;
   }
 
   #closer {

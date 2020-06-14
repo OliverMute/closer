@@ -5,11 +5,11 @@ import Directory from "../../components/directory/directory.component";
 const Homepage = () => {
   return (
     <Fragment>
-      <div id ="homepage-video">
-        <video src="video/drone 4-3.mp4" id={"drone"} autoPlay muted loop />
-        <video src="video/closer.mp4" id={"closer"} autoPlay muted loop/>
+      <div id="homepage-video">
+        <video src="video/veste 3.mp4" id={"veste"} autoPlay muted loop />
+        <video src="video/closer.mp4" id={"closer"} autoPlay muted loop />
       </div>
-        {/*<div id={"navbar"}>
+      {/*<div id={"navbar"}>
         <ul id={"homepage-navbar"}>
           <li>
             <a href="/">About</a>

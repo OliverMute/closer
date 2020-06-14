@@ -11,20 +11,46 @@
 ----------------------------- */
 
 @media (min-width: 300px) {
-  #adidas {
+  #adidas3 {
     position: absolute;
-    top: 4rem;
+    top: 30rem;
     z-index: -1;
     right: -15%;
-    width: 1400px;
+    width: 1000px;
+  }
+
+  #adidas4 {
+    position: absolute;
+    top: 30rem;
+    z-index: -1;
+    right: -90%;
+    width: 2000px;
   }
 }
 
 @media (min-width: 569px) {
-  #adidas {
-    right: -2%;
+  #adidas3 {
+    right: 15%;
+    width: 1100px;
+  }
+
+  #adidas4 {
+
+    right: 2%;
+    width: 2000px;
+    top: 36rem;
   }
 }
 
 @media (min-width: 1095px) {
+  #adidas3 {
+    right: 45%;
+    width: 1200px;
+  }
+
+  #adidas4 {
+    right: 0%;
+    width: 2600px;
+    top: 35rem;
+  }
 }

@@ -1,26 +1,30 @@
 import React, { Component } from "react";
 import { Switch, Route } from "react-router-dom";
-import "./App.css";
+
 import Homepage from "./pages/homepage/homepage.component";
 import ShopPage from "./pages/shop/shop.component";
 import SignInAndSignUpPage from "./pages/sign-in-and-sign-up/sign-in-and-sign-up.component";
 import Header from "./components/header/header.component";
-import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
 import Test from "./test";
 
+import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
+
+// redux stuff
+
+import { connect } from "react-redux";
+import { setCurrentUser } from "./redux/user/user.actions";
+
+import "./App.css";
+
 class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      currentUser: null,
-    };
-  }
+  /* we don't need constructor anymore*/
 
   unsubscribeFromAuth = null;
 
   // set user email and password in state
 
   componentDidMount() {
+    const { setCurrentUser } = this.props;
     this.unsubscribeFromAuth = auth.onAuthStateChanged(async (userAuth) => {
       // if userAuth exists get a snapshot of user data in database
 
@@ -44,16 +48,15 @@ class App extends Component {
 
           // we create a new object with snapshot data
 
-          this.setState({
-            currentUser: {
-              id: snapShot.id,
-              ...snapShot.data(),
-              /* snapShot.id -> we only get the id in snapShot, not
-               * with snapShot.data. SnapShot.data() gives the properties
-               * of the user in database displayName, email etc. So we
-               * combine both to have properties and id */
-            },
+          setCurrentUser({
+            id: snapShot.id,
+            ...snapShot.data(),
+            /* snapShot.id -> we only get the id in snapShot, not
+             * with snapShot.data. SnapShot.data() gives the properties
+             * of the user in database displayName, email etc. So we
+             * combine both to have properties and id */
           });
+
           /*   console.log(this.state);*/
           /*
            () => {
@@ -68,7 +71,7 @@ class App extends Component {
 
         // if no userAuth / signOut
       } else {
-        this.setState({ currentUser: userAuth });
+        setCurrentUser(userAuth);
         /* set currentUser to null*/
       }
     });
@@ -83,7 +86,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Header currentUser={this.state.currentUser} />
+        <Header />
         <Switch>
           <Route exact path={"/"} component={Homepage} />
           <Route path={"/shop"} component={ShopPage} />
@@ -95,4 +98,25 @@ class App extends Component {
   }
 }
 
-export default App;
+const mapDispatchToProps = (dispatch) => ({
+  setCurrentUser: (user) => dispatch(setCurrentUser(user)),
+  /*dispatch the new action that we are trying to pass
+   * which is setCurrentUser in user.action.js*/
+  /* 1) */
+});
+
+export default connect(null, mapDispatchToProps)(App);
+/* null -> our app doesn't need currentUser anymore because it
+ * doesn't do anything with the currentUser value in its
+ * component itself. So we pass null because we don't need
+ * any state so props from our Reducer.*/
+
+/* 1) dispatch() -> A way for Redux to know that whatever you're passing,
+  whatever object you're passing me is going to be an action
+  object that I'm going to pass to every Reducer we are going to call
+  our action (from user.actions.js) but we are going to pass that user in
+  so that what we are doing is we're invoking set current user with the user
+   that will then be used as the payload. But this returns the object.
+   So we're just dipatching the object and now we're gonna pass map dispatch
+    the props as second argument of connect.
+*/

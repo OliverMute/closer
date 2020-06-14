@@ -6,7 +6,7 @@ import SignUp from "../../components/sign-up/sign-up.component";
 const SignInAndSignUpPage = () => {
   return (
     <div>
-      <video id={"adidas"} src="../video/adidas.mp4" autoPlay muted loop />
+      <video id={"adidas4"} src="../video/adidas4.mp4" autoPlay muted loop />
       <div className={"sign-in-and-sign-up"}>
         <SignIn />
         <SignUp />
