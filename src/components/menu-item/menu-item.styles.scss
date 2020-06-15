@@ -57,15 +57,13 @@
     .title {
       font-weight: bold;
       margin-bottom: 6px;
-      font-size: 22px;
+      font-size: 20px;
       color: #4a4a4a;
       margin-top:-10px;
     }
 
     .subtitle {
-      font-weight: lighter;
-      font-size: 16px;
-      margin-top: 27px;
+
     }
   }
 }
@@ -74,13 +72,34 @@
     Media queries
 -----------------------*/
 
-@media (min-width: 200px) {
+@media (min-width: 300px) {
+
+  .menu-item{
+    .content{
+      .subtitle{
+        font-weight: lighter;
+        font-size: 12px;
+        margin-top: 27px;
+      }
+    }
+  }
+
   .large {
     height: 240px !important;
   }
 }
 
-@media (min-width: 686px) {
+@media (min-width: 569px) {
+
+  .menu-item{
+    .content{
+      .subtitle{
+        font-size: 16px;
+      }
+    }
+  }
+
+
   .large {
     height: 380px !important;
   }

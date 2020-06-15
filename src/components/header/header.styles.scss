@@ -4,16 +4,16 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 25px;
-  position:fixed;
+  position: fixed;
   top: 0;
   background-color: #f8fff0;
-  z-index:3;
+  z-index: 3;
 
   .logo-container {
     height: 100%;
     width: 70px;
 
-    img{
+    img {
       width: 140px;
       margin-top: 10px;
       margin-left: 20px;
@@ -34,37 +34,29 @@
   }
 }
 
-
 /* --------------------------
       Media queries
 ----------------------------- */
 
 @media (min-width: 300px) {
-
-  .header{
-    .options{
-      width: 318px;
-
+  .header {
+    .options {
+      width: 330px;
     }
   }
-
-
 
 
 }
 
 @media (min-width: 569px) {
-
-
-
-
 }
 
 @media (min-width: 1095px) {
-
-
-
+  .header {
+    .options {
+      width: 360px;
+    }
+  }
 
 
 }
-
