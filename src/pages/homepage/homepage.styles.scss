@@ -77,7 +77,13 @@ img {
     top: 252px;
     right: 66%;
   }
-  #closer {
+  /*#closer {
+    display: none;
+    !*width: 394px;
+    margin-top: 5px;*!
+  }*/
+
+  #closer3 {
     display: none;
     /*width: 394px;
     margin-top: 5px;*/
@@ -108,7 +114,12 @@ img {
     right: -7%;
     top: 179px;
   }
-  #closer {
+ /* #closer {
+    display: block;
+    width: 758px;
+    margin-top: 151px;
+  }*/
+  #closer3 {
     display: block;
     width: 758px;
     margin-top: 151px;
@@ -146,10 +157,16 @@ img {
     right: -4%;
   }
 
-  #closer {
+ /* #closer {
     width: 1067px;
     left: 20%;
     z-index: -1;
     margin-top: 171px;
+  }*/
+  #closer3 {
+    width: 1080px;
+    left: 20%;
+    z-index: -1;
+    margin-top: 194px;
   }
 }

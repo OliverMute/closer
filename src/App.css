@@ -1,6 +1,7 @@
 body {
   /*font-family: "Thasadith", sans-serif;*/
   font-family: "Trykker", serif;
+  overflow-x:hidden;
 }
 
 li {
