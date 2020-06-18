@@ -3,20 +3,32 @@
   height: 45px;
   position: relative;
   display: flex;
-  margin-top:-7px;
+  margin-top: -7px;
   justify-content: center;
   cursor: pointer;
 
   .shopping-icon {
-    width: 31px;
+    width: 38px;
+  }
+
+  .cart-icon-background {
+    background-color: #6cb73d;
+    width: 28px;
+    height: 25px;
+    position: absolute;
+    top: 14.5px;
+    left: 9px;
+    z-index:-1;
   }
 
   .item-count {
     position: absolute;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: bold;
-    font-family: Thasadith, sans serif;
-    bottom: 10px;
-    color:#14d8a2;
+    font-family: "Prosto One", cursive;
+    bottom: 5px;
+    padding: 4px 8px;
+    left: 9.1px;
+    color: #eef2f7;
   }
 }
