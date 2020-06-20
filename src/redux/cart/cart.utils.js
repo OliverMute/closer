@@ -1,3 +1,7 @@
+/* ---------------------
+     add item to cart
+------------------------ */
+
 export const addItemToCart = (cartItems, cartItemToAdd) => {
   const exitingCartItem = cartItems.find(
     (cartItem) => cartItem.id === cartItemToAdd.id
@@ -23,6 +27,36 @@ export const addItemToCart = (cartItems, cartItemToAdd) => {
   return [...cartItems, { ...cartItemToAdd, quantity: 1 }];
   /* returns all of the existing cartItems already there and add
    * an object cartItemToAdd with a base quantity to 1*/
+};
+
+/* --------------------------------------------
+     reduce item quantity in checkout page
+ ------------------------------------------------ */
+
+export const removeItemFromCart = (cartItems, cartItemToRemove) => {
+  const existingCartItem = cartItems.find(
+    (cartItem) => cartItem.id === cartItemToRemove.id
+  );
+
+  // if quantity is 1 keep items in cart if id not match
+
+  if (existingCartItem.quantity === 1) {
+    return cartItems.filter((cartItem) => cartItem.id !== cartItemToRemove.id);
+  } else {
+    // if quantity more than 1 and id match, reduce quantity by 1
+
+    return cartItems.map(
+      (cartItem) =>
+        cartItem.id === cartItemToRemove.id
+          ? {
+              ...cartItem,
+              quantity: cartItem.quantity - 1,
+              /* if id match, reduce by 1*/
+            }
+          : cartItem
+      /* if id don't match keep items in cart*/
+    );
+  }
 };
 
 /*--------------------------

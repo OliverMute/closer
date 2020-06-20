@@ -8,10 +8,12 @@ import { selectCartTotal } from "../../redux/cart/cart.selectors";
 
 import "./checkout.styles.scss";
 import CheckoutItem from "../../components/checkout-item/checkout-item.component";
+import Hat from "../../components/video/hat.component";
 
 const CheckoutPage = ({ cartItems, total }) => {
   return (
     <div style={{ marginTop: "70px" }} className={"checkout-page"}>
+      <Hat />
       <div className={"checkout-header"}>
         <div className={"header-block"}>
           <span>Product</span>

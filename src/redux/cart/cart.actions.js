@@ -1,9 +1,13 @@
 import CartActionTypes from "./cart.types";
 
+// show hide dropdown cart
+
 export const toggleCartHidden = () => ({
   type: CartActionTypes.TOGGLE_CART_HIDDEN,
 });
 /* 1° */
+
+// add item to cart
 
 export const addItem = (item) => ({
   type: CartActionTypes.ADD_ITEM,
@@ -11,13 +15,26 @@ export const addItem = (item) => ({
 });
 /* 2° */
 
+// clear item from cart
+
+export const clearItemFromCart = (item) => ({
+  type: CartActionTypes.CLEAR_ITEM_FROM_CART,
+  payload: item,
+});
+
+// remove item from cart
+
+export const removeItem = (item) => ({
+  type: CartActionTypes.REMOVE_ITEM,
+  payload: item,
+});
+
 /*
 1°
 we don't pass a payload, we don't need one. Payload is an optional property
 on our action object
 Inside of our reducer, we don't use a payload
  */
-
 /*
 2°
 const addItem -> it's a function that gets the item that we want to add that
