@@ -1,24 +1,30 @@
 import React, { Component } from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
-
 import Homepage from "./pages/homepage/homepage.component";
 import ShopPage from "./pages/shop/shop.component";
 import SignInAndSignUpPage from "./pages/sign-in-and-sign-up/sign-in-and-sign-up.component";
-import Header from "./components/header/header.component";
+import CheckoutPage from "./pages/checkout/checkout.component";
 import Test from "./test";
+
+import Header from "./components/header/header.component";
 
 import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
 
-// redux stuff
+// Redux stuff
 
 import { connect } from "react-redux";
+
 import { setCurrentUser } from "./redux/user/user.actions";
+
+// Reselect stuff
+
+import { createStructuredSelector } from "reselect";
+import { selectCurrentUser } from "./redux/user/user.selectors";
 
 import "./App.css";
 
 class App extends Component {
   /* we don't need constructor anymore*/
-
   unsubscribeFromAuth = null;
 
   // set user email and password in state
@@ -27,7 +33,6 @@ class App extends Component {
     const { setCurrentUser } = this.props;
     this.unsubscribeFromAuth = auth.onAuthStateChanged(async (userAuth) => {
       // if userAuth exists get a snapshot of user data in database
-
       if (userAuth) {
         const userRef = await createUserProfileDocument(userAuth);
         /* userRef is the object we get back from our function.
@@ -45,9 +50,7 @@ class App extends Component {
            * representing the data that is currently stored in database.
            * We don't get any data if we don't use the data() method. If we
            * log (snapShot) we don't have the data */
-
           // we create a new object with snapshot data
-
           setCurrentUser({
             id: snapShot.id,
             ...snapShot.data(),
@@ -56,7 +59,6 @@ class App extends Component {
              * of the user in database displayName, email etc. So we
              * combine both to have properties and id */
           });
-
           /*   console.log(this.state);*/
           /*
            () => {
@@ -82,7 +84,6 @@ class App extends Component {
   componentWillUnmount() {
     this.unsubscribeFromAuth();
   }
-
   render() {
     return (
       <div>
@@ -99,6 +100,7 @@ class App extends Component {
           />
           {/* <Redirect> ->prevent access to sign-in page if user already signed in
            redirect to homepage  */}
+          <Route exact path={"/checkout"} component={CheckoutPage} />
           <Route path={"/test"} component={Test} />
         </Switch>
       </div>
@@ -106,8 +108,8 @@ class App extends Component {
   }
 }
 
-const mapStateToProps = ({ user }) => ({
-  currentUser: user.currentUser,
+const mapStateToProps = createStructuredSelector({
+  currentUser: selectCurrentUser,
 });
 
 const mapDispatchToProps = (dispatch) => ({
@@ -122,7 +124,6 @@ export default connect(mapStateToProps, mapDispatchToProps)(App);
  * doesn't do anything with the currentUser value in its
  * component itself. So we pass null because we don't need
  * any state so props from our Reducer.*/
-
 /* 1) dispatch() -> A way for Redux to know that whatever you're passing,
   whatever object you're passing me is going to be an action
   object that I'm going to pass to every Reducer we are going to call

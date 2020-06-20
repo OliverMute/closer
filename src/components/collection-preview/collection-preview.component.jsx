@@ -20,13 +20,6 @@ const CollectionPreview = ({ title, items }) => {
             muted
             loop
         />*/}
-      <video
-        className="adidas2"
-        src="../../video/adidas2.mp4"
-        autoPlay
-        muted
-        loop
-      />
       <div className={"collection-preview"}>
         <h1 className={"title"}>{title.toUpperCase()}</h1>
         <div className={"preview"}>
