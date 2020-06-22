@@ -1,40 +1,33 @@
-.shop-page{
+.shop-page {
   margin-top: 7rem;
 }
-
-
 
 /* --------------------------
       Media queries
 ----------------------------- */
 
 @media (min-width: 300px) {
-  .adidas2{
-    width: 1055px;
+  .adidas2 {
+    width: 934px;
     margin-top: 58px;
     margin-bottom: 6px;
     margin-left: -575px;
     z-index: -1;
     position: absolute;
     top: 10px;
-
   }
-
 }
 
 @media (min-width: 569px) {
-
   .adidas2 {
     width: 1500px;
     margin-top: 58px;
     margin-bottom: 6px;
     margin-left: -575px;
   }
-
 }
 
 @media (min-width: 1095px) {
-
   .adidas2 {
     width: 2260px;
     margin-top: 58px;
