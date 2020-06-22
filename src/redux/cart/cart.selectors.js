@@ -43,7 +43,7 @@ export const selectCartTotal = createSelector([selectCartItems], (cartItems) =>
  state.cart -> Here we only want the cart from the reducer */
 /* selectCartItems -> select property cartItems of our
  * cart.
- * [selectCart] -> createSelector() takes 2 argument, a collection so
+ * [selectCart] -> createSelector() takes 2 argument, a shop so
  * an array of input selectors and a function that will return the value
  * we want out of this selector
  * (cartItems) -> we get each output of the input selectors in the array

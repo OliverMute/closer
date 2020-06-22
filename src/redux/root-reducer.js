@@ -10,8 +10,11 @@ import storage from "redux-persist/lib/storage";
 
 import userReducer from "./user/user.reducer";
 import cartReducer from "./cart/cart.reducer";
+import directoryReducer from "./directory/directory.reducer";
+import shopReducer from "./shop/shop-reducer";
 
 // Redux persist config
+
 const persistConfig = {
   key: "root",
   /* key: "root" -> define at what point of the reducer we want
@@ -26,11 +29,21 @@ const persistConfig = {
 // We wrap into our persist reducer call
 
 const rootReducer = combineReducers({
-  // user reducer
+  // user Reducer
+
   user: userReducer,
 
-  //cart reducer
+  //cart Reducer
+
   cart: cartReducer,
+
+  // directory Reducer
+
+  directory: directoryReducer,
+
+  // shop Reducer
+
+  shop: shopReducer,
 });
 
 // redux persist

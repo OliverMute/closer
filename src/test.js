@@ -6,7 +6,7 @@ import { auth } from "./firebase/firebase.utils";
 const Test = () => {
   const firestore = firebase.firestore();
 
-  // get collection and doc
+  // get shop and doc
 
   firestore
     .collection("users")
@@ -20,7 +20,7 @@ const Test = () => {
   /* get the doc */
 
   firestore.collection("/users/Ds8ziLVmfZbSCMXasReb/cartItems");
-  /* get the collection */
+  /* get the shop */
   console.log(auth);
   return <div>test</div>;
 };

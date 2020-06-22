@@ -15,7 +15,7 @@ const CollectionItem = ({ item, addItem }) => {
     <div className={"collection-item"}>
       <div
         className={"image"}
-        style={{ backgroundImage: `url(${imageUrl})` }}
+        style={{ backgroundImage: `url(${imageUrl})`, width: "100%" }}
       />
       <div className={"collection-footer"}>
         <span className={"name"}>{name}</span>
@@ -39,7 +39,7 @@ export default connect(null, mapDispatchToProps)(CollectionItem);
  * the addItem prop that gets passed in and then we will dispatch
  * our addItem action creator passing the item in -> dispatch(addItem(item)
  * So what we are doing here is we are creating this new function that's a
- * prop called addItem that will go into our collection item
+ * prop called addItem that will go into our shop item
  *
  * const CollectionItem = ({ name, price, imageUrl, addItem })
  *
