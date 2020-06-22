@@ -35,23 +35,18 @@ img {
 }
 
 .homepage {
-
 }
-
-
 
 /* --------------------------
       Media queries
 ----------------------------- */
 
 @media (min-width: 300px) {
-
   #banner {
-    display:none;
+    display: none;
   }
 
-  .homepage{
-
+  .homepage {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -67,8 +62,8 @@ img {
     right: 0;
   }
 
-  #adidas3{
-    display:none;
+  #adidas3 {
+    display: none;
   }
 
   #veste {
@@ -77,24 +72,17 @@ img {
     top: 252px;
     right: 66%;
   }
-  /*#closer {
-    display: none;
-    !*width: 394px;
-    margin-top: 5px;*!
-  }*/
 
   #closer3 {
-    display: none;
-    /*width: 394px;
-    margin-top: 5px;*/
+    width: 254px;
+    position: absolute;
+    top: 258px;
+    left: -383px;
   }
 }
 
 @media (min-width: 569px) {
-
-
-  .homepage{
-
+  .homepage {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -114,22 +102,21 @@ img {
     right: -7%;
     top: 179px;
   }
- /* #closer {
-    display: block;
-    width: 758px;
-    margin-top: 151px;
-  }*/
+
   #closer3 {
+    position: relative;
+    top: 0;
+    left: 0;
     display: block;
     width: 500px;
     margin-top: 170px;
+    margin-left: 0;
   }
 }
 
 @media (min-width: 1095px) {
-
   #banner {
-    display:block;
+    display: block;
     position: fixed;
     filter: grayscale(0.6);
   }
@@ -141,7 +128,7 @@ img {
     background-color: #fbfdf287;
   }
 
-  #adidas3{
+  #adidas3 {
     display: block;
     position: absolute;
     right: 17.4%;
@@ -151,21 +138,20 @@ img {
   }
 
   #veste {
-
     width: 490px;
     top: 192px;
     right: -4%;
   }
 
- /* #closer {
+  /* #closer {
     width: 1067px;
     left: 20%;
     z-index: -1;
     margin-top: 171px;
   }*/
   #closer3 {
+    margin-left: 0;
     width: 1016px;
-    left: 28%;
     z-index: -1;
     margin-top: 184px;
   }
