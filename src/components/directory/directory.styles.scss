@@ -16,7 +16,13 @@
 
 @media (min-width: 300px) {
   .directory-menu {
-    margin-top: 20rem;
+    margin-top: 4rem;
+  }
+}
+
+@media (min-width: 569px) {
+  .directory-menu {
+    margin-top: 11rem;
   }
 }
 

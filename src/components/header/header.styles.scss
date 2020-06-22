@@ -9,29 +9,7 @@
   background-color: #f8fff0;
   z-index: 3;
 
-  .logo-container {
-    height: 100%;
-    width: 70px;
 
-    img {
-      width: 140px;
-      margin-top: 10px;
-      margin-left: 20px;
-    }
-  }
-
-  .options {
-    width: 260px;
-    height: 100%;
-    display: flex;
-
-    align-items: center;
-
-    .option {
-      padding: 10px 15px;
-      cursor: pointer;
-    }
-  }
 }
 
 /* --------------------------
@@ -41,14 +19,53 @@
 @media (min-width: 300px) {
   .header {
     .options {
-      width: 330px;
+      width: 232px;
+      height: 100%;
+      display: flex;
+      font-size: 13px;
+      align-items: center;
+
+      .option {
+        padding: 10px 5px;
+        cursor: pointer;
+      }
+    }
+
+    .logo-container {
+      height: 100%;
+      width: 70px;
+
+      img {
+        width: 102px;
+        margin-top: 10px;
+        margin-left: 20px;
+      }
     }
   }
-
-
 }
 
 @media (min-width: 569px) {
+
+  .header {
+    .options {
+      width: 340px;
+      font-size: 16px;
+      .option {
+        padding: 10px 15px;
+        cursor: pointer;
+      }
+    }
+
+    .logo-container {
+
+
+      img {
+        width: 140px;
+        margin-top: 10px;
+        margin-left: 20px;
+      }
+    }
+  }
 }
 
 @media (min-width: 1095px) {
@@ -57,6 +74,4 @@
       width: 360px;
     }
   }
-
-
 }
