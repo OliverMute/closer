@@ -17,6 +17,8 @@
     padding-bottom: 20px;
     color: #743e86;
 
+
+
     .header-block{
       text-transform: capitalize;
       width: 23%;
@@ -27,9 +29,44 @@
     }
   }
 
+
+
   .total{
      margin-top: 30px;
      margin-left: auto;
      font-size: 36px;
    }
 }
+
+
+/* --------------------------
+      Media queries
+----------------------------- */
+
+@media (min-width: 300px) {
+
+  .checkout-page{
+    .hat{
+      width: 400px;
+      left: 5%;
+      z-index: -1;
+      position: absolute;
+      top: 91px;
+    }
+  }
+
+}
+
+@media (min-width: 569px) {
+  .checkout-page{
+    .hat{
+      width:480px;
+
+    }
+  }
+}
+
+@media (min-width: 1095px) {
+
+}
+
