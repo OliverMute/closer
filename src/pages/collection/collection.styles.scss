@@ -14,8 +14,35 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 10px;
 
-    & .collection-item {
-      margin-bottom: -55px;
+  }
+}
+
+/* --------------------------
+      Media queries
+----------------------------- */
+
+@media (min-width: 300px) {
+  .collection-page {
+    .items {
+      & .collection-item {
+        margin-bottom: -55px;
+      }
     }
   }
 }
+
+@media (min-width: 569px) {
+  .collection-page {
+    .items {
+      & .collection-item {
+        margin-bottom: 41px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1095px) {
+}
+
+
+
