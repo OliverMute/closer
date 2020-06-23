@@ -1,5 +1,5 @@
-const SHOP_DATA = [
-  {
+const SHOP_DATA = {
+  hats: {
     id: 1,
     title: "Hats",
     routeName: "hats",
@@ -60,7 +60,7 @@ const SHOP_DATA = [
       },
     ],
   },
-  {
+  sneakers: {
     id: 2,
     title: "Sneakers",
     routeName: "sneakers",
@@ -115,7 +115,7 @@ const SHOP_DATA = [
       },
     ],
   },
-  {
+  jackets: {
     id: 3,
     title: "Jackets",
     routeName: "jackets",
@@ -152,7 +152,7 @@ const SHOP_DATA = [
       },
     ],
   },
-  {
+  womens: {
     id: 4,
     title: "Womens",
     routeName: "womens",
@@ -201,7 +201,7 @@ const SHOP_DATA = [
       },
     ],
   },
-  {
+  mens: {
     id: 5,
     title: "Mens",
     routeName: "mens",
@@ -244,6 +244,26 @@ const SHOP_DATA = [
       },
     ],
   },
-];
+};
 
 export default SHOP_DATA;
+
+/* data normalization
+ * instead of an array,
+ *
+ * const SHOP_DATA = [ ]
+ *
+ we converted to an object
+const SHOP_DATA = { }
+ * We set the key to the corresponding object with that
+ * url parameter we're going to pass it.
+ *
+ *  * hats: {
+ *  id:1,
+ *  }
+ *
+ We make sure the key
+ * we use exists in the object itself. Usually we would use
+ * an id, but in our case because the id are numbers, it's ok
+ * if we use the title but lowercase.
+ * */
