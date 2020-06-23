@@ -1,5 +1,7 @@
 .collection-item {
-  width: 22%;
+  width: 22vw;
+  /* 22% of the actual window.
+  if we write 22% -> 22 % of the <div>*/
   display: flex;
   flex-direction: column;
   height: 350px;
