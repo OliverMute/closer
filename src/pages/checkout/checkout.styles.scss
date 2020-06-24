@@ -29,8 +29,6 @@
     }
   }
 
-
-
   .total{
      margin-top: 30px;
      margin-left: auto;
@@ -46,9 +44,10 @@
 @media (min-width: 300px) {
 
   .checkout-page{
+    width: 91%;
     .hat{
-      width: 400px;
-      left: 5%;
+      width: 344px;
+      left: 3%;
       z-index: -1;
       position: absolute;
       top: 91px;
@@ -59,6 +58,7 @@
 
 @media (min-width: 569px) {
   .checkout-page{
+    width: 55%;
     .hat{
       width:480px;
 
