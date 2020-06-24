@@ -1,12 +1,14 @@
-.shop-page {
-  margin-top: 11rem;
-}
+
 
 /* --------------------------
       Media queries
 ----------------------------- */
 
 @media (min-width: 300px) {
+
+  .shop-page {
+    margin-top: 24rem;
+  }
   .adidas2 {
     width: 934px;
     margin-top: 58px;
@@ -28,6 +30,10 @@
 }
 
 @media (min-width: 1095px) {
+
+  .shop-page {
+    margin-top: 38rem;
+  }
   .adidas2 {
     width: 2260px;
     margin-top: 58px;

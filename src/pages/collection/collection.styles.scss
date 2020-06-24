@@ -29,6 +29,13 @@
       }
     }
   }
+
+  .perso31{
+    position: absolute;
+    z-index: -1;
+    width: 76%;
+    top: 164px;
+  }
 }
 
 @media (min-width: 569px) {
@@ -39,9 +46,17 @@
       }
     }
   }
+  .perso31 {
+    width: 65%;
+    top: 150px;
+  }
 }
 
 @media (min-width: 1095px) {
+  .perso31 {
+    width: 49%;
+    top: 200px;
+  }
 }
 
 

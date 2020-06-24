@@ -16,6 +16,13 @@ const ShopPage = ({ match }) => {
       {/* path={`${match.path}`} -> display current path we are on which is "/shop"*/}
       <Route path={`${match.path}/:collectionId`} component={CollectionPage} />
       <Adidas2 />
+      <video
+        className={"perso31"}
+        src="../../video/perso 31.mp4"
+        autoPlay
+        muted
+        loop
+      ></video>
     </div>
   );
 };
