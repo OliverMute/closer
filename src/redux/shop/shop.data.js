@@ -58,6 +58,48 @@ const SHOP_DATA = {
         imageUrl: "https://i.ibb.co/X2VJP2W/blue-snapback.png",
         price: 16,
       },
+      {
+        id: 36,
+        name: "Unisex Daily Snapback Cap",
+        imageUrl: "../../images/hat_1.jpg",
+        price: 12,
+      },
+      {
+        id: 37,
+        name: "Unisex Pink Solid Beanie",
+        imageUrl: "../../images/hat_2.jpg",
+        price: 14,
+      },
+      {
+        id: 38,
+        name: "Women Beige Straw Hat",
+        imageUrl: "../../images/hat_3.jpg",
+        price: 10,
+      },
+      {
+        id: 39,
+        name: "Unisex Black & Navy Blue Colourblocked Baseball Cap",
+        imageUrl: "../../images/hat_4.jpg",
+        price: 18,
+      },
+      {
+        id: 40,
+        name: "Unisex Maroon Solid Baseball Cap",
+        imageUrl: "../../images/hat_5.jpg",
+        price: 15,
+      },
+      {
+        id: 41,
+        name: "Unisex Blue Embroidered Baseball Cap",
+        imageUrl: "../../images/hat_6.jpg",
+        price: 17,
+      },
+      {
+        id: 42,
+        name: "Unisex Red Solid Baseball Cap",
+        imageUrl: "../../images/hat_7.jpg",
+        price: 20,
+      },
     ],
   },
   sneakers: {
@@ -65,6 +107,110 @@ const SHOP_DATA = {
     title: "Sneakers",
     routeName: "sneakers",
     items: [
+      {
+        id: 48,
+        name: "Men Navy Blue Trenzo Ii Idp Running Shoes",
+        imageUrl: "../../images/shoes_1.jpg",
+        price: 260,
+        description:
+          "A pair of navy blue running sports shoes, has regular styling, lace-up detail. Mesh upper. Cushioned footbed. Textured and patterned outsole. Warranty: 3 months. Warranty provided by brand/manufacturer",
+        material: "Mesh. Wipe with a clean, dry cloth to remove dust",
+        Specifications: [
+          {
+            sport: "Running",
+            fastening: "Lace-Ups",
+            outsoleType: "Marking",
+            pronationForRunningShoes: "Neutral",
+            cushioning: "Medium",
+            warranty: "3 months",
+            surfaceType: "Hard",
+            material: "Mesh",
+            ankleHeight: "Regular",
+            cleats: "No Cleats",
+            archType: "Medium",
+            runningType: "Road Running",
+            distance: "Medium",
+          },
+        ],
+      },
+      {
+        id: 49,
+        name: "Men Metaflash Running Shoes",
+        imageUrl: "../../images/shoes_2.jpg",
+        price: 225,
+        description:
+          "A pair of navy blue running sports shoes, has regular styling, lace-up detail. Mesh upper. Cushioned footbed. Textured and patterned outsole. Warranty: 3 months. Warranty provided by brand/manufacturer",
+        material: "Mesh. Wipe with a clean, dry cloth to remove dust",
+        Specifications: [
+          {
+            sport: "Running",
+            fastening: "Lace-Ups",
+            outsoleType: "Marking",
+            pronationForRunningShoes: "Neutral",
+            cushioning: "Medium",
+            warranty: "3 months",
+            surfaceType: "Hard",
+            material: "Mesh",
+            ankleHeight: "Regular",
+            cleats: "No Cleats",
+            archType: "Medium",
+            runningType: "Road Running",
+            distance: "Medium",
+          },
+        ],
+      },
+      {
+        id: 50,
+        name: "Men Black & Red Out Back Outdoor Shoes",
+        imageUrl: "../../images/shoes_3.jpg",
+        price: 248,
+        description:
+          "A pair of navy blue running sports shoes, has regular styling, lace-up detail. Mesh upper. Cushioned footbed. Textured and patterned outsole. Warranty: 3 months. Warranty provided by brand/manufacturer",
+        material: "Mesh. Wipe with a clean, dry cloth to remove dust",
+        Specifications: [
+          {
+            sport: "Running",
+            fastening: "Lace-Ups",
+            outsoleType: "Marking",
+            pronationForRunningShoes: "Neutral",
+            cushioning: "Medium",
+            warranty: "3 months",
+            surfaceType: "Hard",
+            material: "Mesh",
+            ankleHeight: "Regular",
+            cleats: "No Cleats",
+            archType: "Medium",
+            runningType: "Road Running",
+            distance: "Medium",
+          },
+        ],
+      },
+      {
+        id: 51,
+        name: "Men Navy Blue KYRIS 4.0 Running Shoes",
+        imageUrl: "../../images/shoes_4.jpg",
+        price: 279,
+        description:
+          "A pair of navy blue running sports shoes, has regular styling, lace-up detail. Mesh upper. Cushioned footbed. Textured and patterned outsole. Warranty: 3 months. Warranty provided by brand/manufacturer",
+        material: "Mesh. Wipe with a clean, dry cloth to remove dust",
+        Specifications: [
+          {
+            sport: "Running",
+            fastening: "Lace-Ups",
+            outsoleType: "Marking",
+            pronationForRunningShoes: "Neutral",
+            cushioning: "Medium",
+            warranty: "3 months",
+            surfaceType: "Hard",
+            material: "Mesh",
+            ankleHeight: "Regular",
+            cleats: "No Cleats",
+            archType: "Medium",
+            runningType: "Road Running",
+            distance: "Medium",
+          },
+        ],
+      },
       {
         id: 10,
         name: "Adidas NMD",
@@ -149,6 +295,72 @@ const SHOP_DATA = {
         name: "Tan Trench",
         imageUrl: "https://i.ibb.co/M6hHc3F/brown-trench.png",
         price: 185,
+      },
+      {
+        id: 43,
+        name: "Men Blue Solid Denim Jacket",
+        imageUrl: "../../images/jacket_1.jpg",
+        price: 175,
+      },
+      {
+        id: 44,
+        name: "Navy Sporty Jacket",
+        imageUrl: "../../images/jacket_2.jpg",
+        price: 110,
+      },
+      {
+        id: 45,
+        name: "Women Navy Blue Solid Crop Jacket",
+        imageUrl: "../../images/jacket_3.jpg",
+        price: 75,
+      },
+      {
+        id: 46,
+        name: "Women Black Solid Cropped Tailored Jacket",
+        imageUrl: "../../images/jacket_4.jpg",
+        price: 58,
+      },
+      {
+        id: 47,
+        name: "Men Black Slim Fit Solid Denim Jacket",
+        imageUrl: "../../images/jacket_5.jpg",
+        description:
+          "Black solid jacket, has a spread collar, 4 pockets, button closure, long sleeves, straight hem, and unlined",
+        size: "Slim Fit. The model (height 6') is wearing a size M",
+        Material: "100% cotton. Machine-wash",
+        Specifications: [
+          {
+            sleeveLength: "Long Sleeves",
+          },
+          {
+            collar: "Spread Collar",
+          },
+          {
+            Length: "Regular",
+          },
+          {
+            LiningFabric: "Unlined",
+          },
+          {
+            Hemline: "Straight",
+          },
+          {
+            Type: "Denim Jacket",
+          },
+          {
+            PatternType: "Solid",
+          },
+          {
+            Closure: "Button",
+          },
+          {
+            NumberOfPockets: 4,
+          },
+          {
+            Occasion: "Casual",
+          },
+        ],
+        price: 195,
       },
     ],
   },
