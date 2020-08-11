@@ -24,6 +24,8 @@ const CollectionsOverview = ({ collections }) => {
 
 const mapStateToProps = createStructuredSelector({
   collections: selectCollectionsForPreview,
+  /* selectCollectionsForPreview -> it's an array. Previously we had an
+   * object. But we changed it in shop.selector file. */
 });
 
 export default connect(mapStateToProps)(CollectionsOverview);
