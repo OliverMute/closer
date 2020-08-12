@@ -12,7 +12,15 @@ import rootReducer from "./root-reducer";
 
 // middleware
 
-const middlewares = [logger];
+const middlewares = [];
+
+if (process.env.NODE_ENV === "development") {
+  middlewares.push(logger);
+  /*set logger middleware only in dev mode. This way we
+   * don't see logger messages in production mode
+   * push(logger) -> if in development, we push the logger
+   * into our array */
+}
 
 // make store
 
