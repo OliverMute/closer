@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 50px auto 0;
+  margin: 50px auto ;
   background-color: #b5bed4ab;
   padding: 20px;
 
@@ -34,6 +34,17 @@
      margin-left: auto;
      font-size: 36px;
    }
+
+  button{
+    margin-left:auto;
+  }
+
+  .test-warning{
+    color:red;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 24px;
+  }
 }
 
 
