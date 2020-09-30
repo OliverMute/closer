@@ -1,0 +1,29 @@
+.Best-selling-container {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 0;
+  background:white;
+  width:103%;
+}
+
+.Best-selling{
+  min-width: 20%;
+  height: 339px;
+  display: flex;
+  align-items: center;
+  flex: 1 1 auto;
+  margin: 0 7.5px 27px;
+  overflow: hidden;
+  position: relative;
+  justify-content: center;
+  z-index: 0;
+  background:white;
+  padding:40px;
+
+  img{
+    z-index: 0;
+    width:418px;
+    padding:40px;
+  }
+}

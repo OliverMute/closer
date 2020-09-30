@@ -1,5 +1,8 @@
 import React from "react";
 import MenuItem from "../menu-item/menu-item.component";
+import Carousel from "react-elastic-carousel";
+
+import "./directory.styles.scss";
 
 // Redux stuff
 
@@ -9,15 +12,44 @@ import { connect } from "react-redux";
 
 import { createStructuredSelector } from "reselect";
 import { selectDirectorySections } from "../../redux/directory/directory.selectors";
-
-import "./directory.styles.scss";
+import CarouselSlide from "../carousel/carousel.component";
 
 const Directory = ({ sections }) => {
+  const breakPoints = [
+    {
+      width: 1,
+      itemsToShow: 1,
+    },
+    {
+      width: 500,
+      itemsToShow: 2,
+    },
+    {
+      width: 768,
+      itemsToShow: 3,
+    },
+    {
+      width: 1200,
+      itemsToShow: 4,
+    },
+  ];
+
   return (
-    <div className="directory-menu">
-      {sections.map(({ id, ...otherSectionProps }) => {
-        return <MenuItem key={id} {...otherSectionProps} />;
-      })}
+    <div className="directory-menu-container">
+      {/* <img src="../../../images/banner.jpg" alt="" className={"banner"} />*/}
+
+      <div className="directory-menu-wrapper">
+        <div className="directory-menu-wrapper-product">
+          <h1>Nos produits</h1>
+          <div className={"directory-menu"}>
+            {sections.map(({ id, ...otherSectionProps }) => {
+              return <MenuItem key={id} {...otherSectionProps} />;
+            })}
+          </div>
+        </div>
+        <h1>Nos offres</h1>
+        <CarouselSlide />
+      </div>
     </div>
   );
 };

@@ -16,6 +16,7 @@ import { selectCurrentUser } from "../../redux/user/user.selectors";
 import { selectCartHidden } from "../../redux/cart/cart.selectors";
 
 import "./header.styles.scss";
+import Search from "../search/Search.component";
 
 const Header = ({ currentUser, hidden }) => (
   <div className={"header"}>
@@ -24,20 +25,30 @@ const Header = ({ currentUser, hidden }) => (
         <img src="../../images/logo.jpg" alt="" />
       </div>
     </Link>
+    <Search />
     <div className={"options"}>
       <Link className={"option"} to={"/shop"}>
-        SHOP
+        Vêtements
       </Link>
       <Link className={"option"} to={"/shop"}>
-        CONTACT
+        Chaussures
+      </Link>
+      <Link className={"option"} to={"/shop"}>
+        Sacs
+      </Link>
+      <Link className={"option"} to={"/shop"}>
+        Bijoux
+      </Link>
+      <Link className={"option"} to={"/shop"}>
+        Accessoires
       </Link>
       {currentUser ? (
         <div className={"option"} onClick={() => auth.signOut()}>
-          SIGN OUT
+          Déconnexion
         </div>
       ) : (
         <Link className={"option"} to={"/signin"}>
-          SIGN IN
+          Identifiez-vous
         </Link>
       )}
       <CartIcon />

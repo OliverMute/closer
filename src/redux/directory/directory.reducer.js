@@ -1,24 +1,39 @@
 const INITIAL_STATE = {
   sections: [
     {
-      title: "hats",
-      imageUrl: "images/cap.jpg",
-      id: 1,
-      linkUrl: "shop/hats",
-    },
-    {
-      title: "jackets",
+      title: "Vêtements",
       imageUrl: "images/jackets.jpg",
-      id: 2,
+      id: 1,
       linkUrl: "shop/jackets",
     },
     {
-      title: "sneakers",
+      title: "Chaussures",
       imageUrl: "images/sneakers.jpg",
-      id: 3,
+      id: 2,
       linkUrl: "shop/sneakers",
     },
     {
+      title: "Sacs",
+      imageUrl: "images/cap.jpg",
+      id: 3,
+      linkUrl: "shop/hats",
+    },
+    {
+      title: "Bijoux",
+      imageUrl: "images/bijoux_1.jpg",
+      id: 4,
+      size: "large",
+      linkUrl: "shop/womens",
+    },
+    {
+      title: "Accessoires",
+      imageUrl: "images/accessoire_1.jpg",
+      id: 5,
+      size: "large",
+      linkUrl: "shop/womens",
+    },
+
+    /* {
       title: "womens",
       imageUrl: "images/women.jpg",
       id: 4,
@@ -31,7 +46,7 @@ const INITIAL_STATE = {
       id: 5,
       size: "large",
       linkUrl: "shop/mens",
-    },
+    },*/
   ],
 };
 

@@ -5,8 +5,17 @@
   margin-bottom: 25px;
   position: fixed;
   top: 0;
-  background-color: #f8fff0;
+  background-color: white;
   z-index: 3;
+  box-shadow: 2px 2px 4px 3px rgba(145, 145, 145, 0.44);
+
+  a{
+    transition: 0.5s ease-out;
+  }
+
+  a:hover{
+    color: #90e090;
+  }
 }
 
 /* --------------------------
@@ -44,7 +53,7 @@
 
 @media (min-width: 569px) {
   .header {
-    height: 70px;
+    height: 96px;
     .options {
       height: 95%;
       width: 340px;
@@ -57,7 +66,7 @@
 
     .logo-container {
       img {
-        width: 140px;
+        width: 92px;
         margin-top: 10px;
         margin-left: 20px;
       }
@@ -67,9 +76,9 @@
 
 @media (min-width: 1095px) {
   .header {
-    height: 70px;
+    height: 128px;
     .options {
-      width: 360px;
+      width: 700px;
     }
   }
 }

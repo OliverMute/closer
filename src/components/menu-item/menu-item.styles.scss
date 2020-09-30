@@ -1,13 +1,19 @@
+.menu-item-container{
+
+}
+
 .menu-item {
   min-width: 30%;
-  height: 240px;
+  height: 339px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  flex-direction: column;
   flex: 1 1 auto;
-  border: 1px solid black;
-  margin: 0 7.5px 15px;
+  margin: 0 7.5px 27px;
   overflow: hidden;
+  position:relative;
+  justify-content: center;
+
 
   & .large {
     height: 380px;
@@ -39,6 +45,7 @@
     height: 100%;
     background-size: cover;
     background-position: center;
+    z-index:0;
   }
 
   .content {
@@ -54,18 +61,24 @@
     position: absolute;
 
 
-    .title {
-      font-weight: bold;
-      margin-bottom: 6px;
-      font-size: 20px;
-      color: #4a4a4a;
-      margin-top:-10px;
-    }
+
 
     .subtitle {
 
     }
   }
+}
+
+.menu-item-title {
+  font-weight: bold;
+  font-size: 28px;
+  font-family: Prosto, sans-serif;
+  position: absolute;
+  z-index: 2;
+  color: #dc97ff;
+  text-shadow: 3px 2px 4px #141f2d;
+
+
 }
 
 /* ----------------------

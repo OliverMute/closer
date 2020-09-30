@@ -29,13 +29,31 @@ header {
   height: 300px;
 }
 
-img {
-  z-index: -1;
-  top: -22rem;
-}
 
 .homepage {
-  background-color: #f8fff0;
+
+  width:100%;
+
+  .homepage-about-us{
+    display:flex;
+    padding:40px 120px;
+    justify-content: space-between;
+    z-index:0;
+    background-color:#9aebff73;
+    width: 98.6%;
+
+    color:#fffcdb;
+    img{
+      width: 400px;
+      z-index: 0;
+      top: -22rem;
+    }
+
+    .homepage-about-us-wrapper{
+      width:620px;
+      font-size:1.3rem;
+    }
+  }
 }
 
 /* --------------------------
@@ -118,6 +136,22 @@ img {
 }
 
 @media (min-width: 1095px) {
+
+.logo-video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: -1;
+  top: -42px;
+  width: 100%;
+  left:-4px;
+
+
+  video {
+    width: 96%;
+  }
+
   #banner {
     display: block;
     position: fixed;
@@ -131,30 +165,26 @@ img {
     background-color: #fbfdf287;
   }
 
-  #adidas3 {
+ /* #adidas3 {
     display: block;
     position: absolute;
     right: 17.3%;
     width: 588px;
     top: 35px;
-  }
+  }*/
 
-  #veste {
+  /*#veste {
     width: 490px;
     top: 69px;
     right: -4%;
   }
 
-  /* #closer {
-    width: 1067px;
-    left: 20%;
-    z-index: -1;
-    margin-top: 171px;
-  }*/
+
   #closer3 {
     margin-left: 0;
     width: 1016px;
     z-index: 1;
     margin-top: 63px;
-  }
+  }*/
+}
 }
