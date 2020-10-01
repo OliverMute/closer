@@ -14,9 +14,9 @@ const INITIAL_STATE = {
     },
     {
       title: "Sacs",
-      imageUrl: "images/cap.jpg",
+      imageUrl: "images/bags.jpg",
       id: 3,
-      linkUrl: "shop/hats",
+      linkUrl: "shop/bags",
     },
     {
       title: "Bijoux",

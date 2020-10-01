@@ -2,19 +2,19 @@ const INITIAL_STATE = {
   offers: [
     {
       title: "Offer 1",
-      imageUrl: "images/offer_1.png",
+      imageUrl: "images/offer_1.jpg",
       id: 1,
       linkUrl: "shop/offer_1",
     },
     {
       title: "Offer 10",
-      imageUrl: "images/offer_10.png",
+      imageUrl: "images/offer_10.jpg",
       id: 2,
       linkUrl: "shop/offer_10",
     },
     {
       title: "Offer 3",
-      imageUrl: "images/offer_3.png",
+      imageUrl: "images/offer_3.jpg",
       id: 3,
       linkUrl: "shop/offer_3",
     },
